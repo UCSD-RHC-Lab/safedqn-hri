@@ -85,8 +85,8 @@ We use [OpenAI Gym](https://gym.openai.com/) for our reinforcement learning agen
 
 You can install the dependencies with `pip`: 
 ``` 
-git clone https://github.com/UCSD-RHC-Lab/hri-social-nav-in-ed-public.git 
-cd hri-social-nav-in-ed-public
+git clone https://github.com/UCSD-RHC-Lab/safedqn-hri.git 
+cd safedqn-hri
 pip install opencv-python
 pip install matplotlib
 pip install pandas
@@ -100,8 +100,8 @@ pip install scipy==1.1.0
 # Install SafeDQN & Prerequisites with Miniconda (Optional 2)
 
 ```
-git clone https://github.com/UCSD-RHC-Lab/hri-social-nav-in-ed-public.git 
-cd hri-social-nav-in-ed-public 
+git clone https://github.com/UCSD-RHC-Lab/safedqn-hri.git 
+cd safedqn-hri 
 pip install -e . 
 ``` 
 The code is compatible with Python 2.7 and 3.4+. SafeDQN was tested on Mac and Ubuntu machines. The other dependencies are needed to run the agent: 
@@ -163,7 +163,7 @@ SafeDQN requires a map configuration file (.csv file) to train and test the plan
 
 
 ``` 
-cd hri-social-nav-in-ed-public 
+cd safedqn-hri 
 cd datasets/list/ 
 bash generate_image_lists.sh 
 cd ../../scripts/ 
@@ -175,7 +175,7 @@ Additional libraries to install:
 
 ## Code Structure Overview
 
-`hri-social-nav-in-ed-public` contains: 
+`safedqn-hri` contains: 
 
 `learning/`: store agent navigation methods
 - `safedqn.py`: runs SafeDQN planner
